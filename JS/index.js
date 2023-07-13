@@ -10,7 +10,7 @@ function enviar(){
     }else if(nombre == nombre && correo == correo && edad == edad && comentarios == comentarios) {
         //alert("el nombre es: "+ nombre+ " su edad es: "+ edad)
         swal({
-            title: "Sus datos fueron ingresados correctamente " + nombre,
+            title: "MENSAJE ENVIADO" + nombre,
             text: "Gracias por preferirnos :-)",
             icon: "success",
           });
