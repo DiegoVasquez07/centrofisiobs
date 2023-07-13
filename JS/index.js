@@ -4,13 +4,16 @@ function enviar(){
     const edad = document.getElementById("edad").value
     const comentarios = document.getElementById("comentarios").value 
     if (nombre == "" || correo == "" || edad == "" || comentarios == ""){
-        
-        alert("No se admiten campos vacios")
+                //alert("No se admiten campos vacios")
+                swal("ACCESO INCORRECTO", "No se admiten espacios vacios :-(  " , "error");
 
-    }else if(nombre.value == "nombre" && correo.value == "correo" && edad.value == "edad" && comentarios.value == "comentarios") {
-        alert("el nombre es:"+ nombre.value+ "su edad es: "+ edad.value)
+    }else if(nombre == nombre && correo == correo && edad == edad && comentarios == comentarios) {
+        //alert("el nombre es: "+ nombre+ " su edad es: "+ edad)
+        swal({
+            title: "Sus datos fueron ingresados correctamente " + nombre,
+            text: "Gracias por preferirnos :-)",
+            icon: "success",
+          });
 
     }
-
-
 }
